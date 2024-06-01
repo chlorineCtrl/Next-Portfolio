@@ -4,6 +4,7 @@ import Intro from "@/components/intro";
 import Image from "next/image";
 import About from "@/components/about";
 import Projects from "@/components/projects";
+import Skills from "@/components/skills";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <SectionDivider />
       <About />
       <Projects />
+      <Skills />
     </main>
   );
 }
