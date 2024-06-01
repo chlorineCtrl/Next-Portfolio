@@ -62,24 +62,30 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "All-good-cv-generator",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+      "An Automated CV generator that is capable enough to brought us a Hackathon win! ",
+    tags: ["React", "Next.js", "tRPC", "Tailwind", "Prisma"],
     imageUrl: image1Img,
   },
   {
-    title: "rmtDev",
+    title: "Complexity-Analyzer",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+      "This is a Maintainability Index calculation Tool for Golang Codebase capable to calcuate Cyclomatic Complexity,Halstead Metrics and Maintainability Index",
+    tags: ["Golang", "Static Analyzer"],
     imageUrl: image2Img,
   },
   {
-    title: "Word Analytics",
+    title: "QuiKNote",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+      "A lite note taking app which enables you to take note on the Go! ",
+    tags: ["Flutter", "Firebase", "SQL"],
+    imageUrl: image3Img,
+  },
+  {
+    title: "WhatTodo",
+    description: "RESTful APIs with Node.js and Express.",
+    tags: ["ReactJS", "Express", "MongoDB", "JavaScript"],
     imageUrl: image3Img,
   },
 ] as const;
