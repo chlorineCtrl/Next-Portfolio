@@ -49,16 +49,17 @@ export const experiencesData = [
     date: "2018 - 2019",
   },
   {
-    title: "Mobile App Developer and QA",
+    title: "Mobile Application Development and Quality Assurance",
     location: "Greentech Apps Foundation",
-    description: "",
+    description:
+      "Worked with live applications hosted on Google Play Store to implement functionality using Flutter through SQLite database integration.",
     icon: React.createElement(CgWorkAlt),
     date: "2023",
   },
   {
-    title: "BSc",
+    title: "Bachalor of Science, Software Engineering,",
     location: "Islamic Universiy of Technology",
-    description: "",
+    description: "Currently Persuing.",
     icon: React.createElement(LuGraduationCap),
     date: "2020 - 2024",
   },
@@ -71,6 +72,7 @@ export const projectsData = [
       "An Automated CV generator that is capable enough to brought us a Hackathon win! ",
     tags: ["React", "Next.js", "tRPC", "Tailwind", "Prisma"],
     imageUrl: image1Img,
+    githubUrl: "https://github.com/chlorineCtrl/all-good-cv-generator",
   },
   {
     title: "Complexity-Analyzer",
@@ -78,6 +80,7 @@ export const projectsData = [
       "This is a Maintainability Index calculation Tool for Golang Codebase capable to calcuate Cyclomatic Complexity,Halstead Metrics and Maintainability Index",
     tags: ["Golang", "Static Analyzer"],
     imageUrl: image2Img,
+    githubUrl: "https://github.com/chlorineCtrl/Complexity-Analyzer",
   },
   {
     title: "QuiKNote",
@@ -85,12 +88,14 @@ export const projectsData = [
       "A lite note taking app which enables you to take note on the Go! ",
     tags: ["Flutter", "Firebase", "SQL"],
     imageUrl: image3Img,
+    githubUrl: "https://github.com/chlorineCtrl/QuiKNote",
   },
   {
     title: "WhatTodo",
     description: "RESTful APIs with Node.js and Express.",
     tags: ["ReactJS", "Express", "MongoDB", "JavaScript"],
     imageUrl: image3Img,
+    githubUrl: "https://github.com/chlorineCtrl/WhatTodo",
   },
 ] as const;
 
