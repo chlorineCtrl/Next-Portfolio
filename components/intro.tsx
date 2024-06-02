@@ -32,7 +32,7 @@ export default function Intro() {
             }}
           >
             <Image
-              src={"/avatar.png"}
+              src={"/avatar.jpg"}
               width={192}
               height={192}
               alt="avatar"
