@@ -1,9 +1,10 @@
-"use client";
-
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 import { projectsData } from "@/lib/data";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
+// @ts-ignore
+import useSound from "use-sound";
+import React from "react";
 
 type ProjectProps = (typeof projectsData)[number];
 
@@ -22,6 +23,20 @@ export default function Project({
   const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
   const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
 
+  // Sound
+  const soundUrl = "/sounds/rising-pops.mp3";
+  const [play, { stop }] = useSound(soundUrl, { volume: 0.5 });
+
+  const [isHovering, setIsHovering] = React.useState(false);
+
+  useEffect(() => {
+    if (isHovering) {
+      play();
+    } else {
+      stop();
+    }
+  }, [isHovering, play, stop]);
+
   return (
     <motion.div
       ref={ref}
@@ -31,7 +46,17 @@ export default function Project({
       }}
       className="group mb-3 sm:mb-8 last:mb-0"
     >
-      <a href={githubUrl} target="_blank" rel="noopener noreferrer">
+      <a
+        onMouseEnter={() => {
+          setIsHovering(true);
+        }}
+        onMouseLeave={() => {
+          setIsHovering(false);
+        }}
+        href={githubUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <section className="bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg hover:shadow-2xl overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-violet-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-indigo-900">
           <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
             <h3 className="text-2xl font-semibold">{title}</h3>

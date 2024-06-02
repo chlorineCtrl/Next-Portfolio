@@ -10,7 +10,7 @@ export default function ThemeSwitch() {
   const { theme, toggleTheme } = useTheme();
 
   const audioFile = "/switch.mp3";
-  const [play] = useSound(audioFile);
+  const [play] = useSound(audioFile, { volume: 0.25 });
   const handleClick = () => {
     play();
     toggleTheme();

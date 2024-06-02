@@ -6,10 +6,18 @@ import { links } from "@/lib/data";
 import Link from "next/link";
 import clsx from "clsx";
 import { useActiveSectionContext } from "./context/active-section-context";
+// @ts-ignore
+import useSound from "use-sound";
 
 export default function Header() {
   const { activeSection, setActiveSection, setTimeOfLastClick } =
     useActiveSectionContext();
+
+  const audioFile = "/click.mp3";
+  const [play] = useSound(audioFile, { volume: 0.5 });
+  const handleClick = () => {
+    play();
+  };
 
   return (
     <header className="z-[999] relative">
@@ -40,6 +48,7 @@ export default function Header() {
                 onClick={() => {
                   setActiveSection(link.name);
                   setTimeOfLastClick(Date.now());
+                  handleClick();
                 }}
               >
                 {link.name}
