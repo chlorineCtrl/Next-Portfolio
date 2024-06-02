@@ -21,13 +21,13 @@ export default function About() {
       <p className="mb-3">
         I am Md Abir Hasan Fuad, a driven software engineering student with
         expertise in front-end, mobile, and back-end development. My skills
-        include JavaScript, TypeScript, ReactJS, Flutter, and more, and I have
-        experience in industry standard apps, hackathons, and delivering
+        include JavaScript, TypeScript, ReactJS, Flutter, and more. I have
+        experience in industry-standard apps, hackathons, and delivering
         solutions to complex problems. With a keen interest in ideating
-        applications to solve real-life challenges, I've excelled in internships
-        at Greentech Apps Foundation, contributing to apps like Hadith
-        Collection and Deen Quiz. Notable projects include the automated CV
-        generator and NextHub, demonstrating my innovation and technical
+        applications to solve real-life challenges, I&apos;ve excelled in
+        internships at Greentech Apps Foundation, contributing to apps like
+        Hadith Collection and Deen Quiz. Notable projects include the automated
+        CV generator and NextHub, demonstrating my innovation and technical
         proficiency. My educational background includes a Bachelor of Science in
         Software Engineering from Islamic University of Technology, along with
         outstanding academic achievements in HSC and SSC. I hold certificates
