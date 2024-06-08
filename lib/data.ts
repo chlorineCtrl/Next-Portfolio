@@ -49,7 +49,7 @@ export const experiencesData = [
     date: "2018 - 2019",
   },
   {
-    title: "Mobile Application Development and Quality Assurance",
+    title: "Mobile Application Developer",
     location: "Greentech Apps Foundation",
     description:
       "Worked with live applications hosted on Google Play Store to implement functionality using Flutter through SQLite database integration.",
@@ -57,9 +57,10 @@ export const experiencesData = [
     date: "2023",
   },
   {
-    title: "Bachalor of Science, Software Engineering,",
+    title: "Bachalor of Science",
     location: "Islamic Universiy of Technology",
-    description: "Currently Persuing.",
+    description:
+      "I will graduate this year and have a degree on Bachalor of Science(BSc) in Software Engineering at IUT.",
     icon: React.createElement(LuGraduationCap),
     date: "2020 - 2024",
   },
@@ -110,12 +111,8 @@ export const skillsData = [
   "Tailwind",
   "Prisma",
   "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
   "Express",
   "PostgreSQL",
   "Python",
-  "Django",
   "Framer Motion",
 ] as const;
